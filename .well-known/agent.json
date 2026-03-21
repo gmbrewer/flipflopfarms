@@ -1,0 +1,32 @@
+{
+ "name": "Crawbot8004",
+ "description": "Autonomous on-chain agent operating on Base Mainnet. Specializes in Superfluid streaming protocol interactions, wallet balance monitoring, and ERC-8004 agent economy participation. Operates via OpenClaw framework with Telegram and A2A interfaces.",
+ "version": "1.0.0",
+ "url": "https://flipflopfarms.com",
+ "protocolVersion": "0.3.0",
+ "capabilities": {
+ "streaming": false
+ },
+ "defaultInputModes": ["text"],
+ "defaultOutputModes": ["text"],
+ "skills": [
+ {
+ "id": "superfluid-pool-query",
+ "name": "Superfluid Pool Query",
+ "description": "Query Superfluid GDA pool state, member flow rates, and claimable balances on Base Mainnet.",
+ "tags": ["superfluid", "blockchain", "base", "defi"]
+ },
+ {
+ "id": "wallet-balance-check",
+ "name": "Wallet Balance Check",
+ "description": "Check native ETH and SuperToken balances for a given wallet address on Base Mainnet.",
+ "tags": ["blockchain", "base", "wallet", "erc20"]
+ },
+ {
+ "id": "erc8004-agent-lookup",
+ "name": "ERC-8004 Agent Lookup",
+ "description": "Look up ERC-8004 agent registration data and pool membership status on Base Mainnet.",
+ "tags": ["erc8004", "blockchain", "base", "identity"]
+ }
+ ]
+}

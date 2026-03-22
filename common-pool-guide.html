@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Join the Superfluid Common Pool — flipflopfarms.com</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #21262d;
+      padding-bottom: 1.5rem;
+    }
+
+    .site-name {
+      font-size: 0.85rem;
+      color: #8b949e;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .site-name a {
+      color: #8b949e;
+      text-decoration: none;
+    }
+
+    .site-name a:hover { color: #58a6ff; }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #f0f6fc;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      color: #8b949e;
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #f0f6fc;
+      margin: 2.5rem 0 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #21262d;
+    }
+
+    p { margin-bottom: 1rem; color: #c9d1d9; }
+
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .callout {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-left: 3px solid #58a6ff;
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+    }
+
+    .callout.warning {
+      border-left-color: #d29922;
+    }
+
+    .callout.success {
+      border-left-color: #3fb950;
+    }
+
+    .callout p { margin-bottom: 0; }
+    .callout p + p { margin-top: 0.5rem; }
+
+    .callout-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      color: #58a6ff;
+    }
+
+    .callout.warning .callout-label { color: #d29922; }
+    .callout.success .callout-label { color: #3fb950; }
+
+    ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ol li {
+      color: #c9d1d9;
+      margin-bottom: 0.75rem;
+      padding-left: 0.25rem;
+    }
+
+    ol li strong { color: #f0f6fc; }
+
+    .step-block {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin: 0.75rem 0;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      background: #21262d;
+      color: #58a6ff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    .step-content strong {
+      display: block;
+      color: #f0f6fc;
+      margin-bottom: 0.25rem;
+    }
+
+    .step-content p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    code {
+      background: #21262d;
+      color: #79c0ff;
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      font-size: 0.875em;
+      font-family: "SFMono-Regular", Consolas, monospace;
+    }
+
+    .pool-card {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 0.75rem 0;
+    }
+
+    .pool-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #f0f6fc;
+      margin-bottom: 0.5rem;
+    }
+
+    .pool-card .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.2em 0.6em;
+      border-radius: 20px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    .badge-open { background: #1f4e2f; color: #3fb950; }
+    .badge-score { background: #3b2a0a; color: #d29922; }
+
+    .pool-card p { font-size: 0.95rem; margin-bottom: 0; }
+
+    .faq-item { margin-bottom: 1.5rem; }
+    .faq-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #f0f6fc;
+      margin-bottom: 0.4rem;
+    }
+    .faq-item p { margin-bottom: 0; font-size: 0.95rem; }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #21262d;
+      font-size: 0.85rem;
+      color: #8b949e;
+    }
+
+    footer a { color: #8b949e; }
+    footer a:hover { color: #58a6ff; }
+
+    .bot-callout {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-left: 3px solid #bc8cff;
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+    }
+
+    .bot-callout .callout-label { color: #bc8cff; }
+    .bot-callout p { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="site-name"><a href="/">flipflopfarms.com</a></div>
+      <h1>How to Join the Superfluid Common Pool</h1>
+      <p class="subtitle">A step-by-step guide for ERC-8004 agents on Base Mainnet</p>
+    </header>
+
+    <p>
+      The Superfluid Common Pool streams SUP tokens continuously to every registered
+      ERC-8004 agent on Base Mainnet. Once you join, tokens flow directly to your
+      agent wallet in real time — no periodic claiming required.
+    </p>
+
+    <p>
+      This guide walks you through the process from start to finish, including a
+      known gotcha that has caught out a number of agents in the community.
+    </p>
+
+    <div class="bot-callout">
+      <div class="callout-label">🤖 Coming soon</div>
+      <p>
+        An interactive assistant is in development that will walk you through this
+        process step by step via Telegram, check your wallet eligibility, and verify
+        your membership after joining. In the meantime, this guide covers everything
+        you need to do it manually.
+      </p>
+    </div>
+
+    <div class="callout warning">
+      <div class="callout-label">📝 First draft</div>
+      <p>
+        This guide is a first draft based on our own experience connecting to the pools.
+        If you run into any problems working through these steps, please reach out via
+        Discord so we can improve it for everyone. Your feedback directly shapes the next version.
+      </p>
+    </div>
+
+    <h2>Before you start</h2>
+
+    <p>You will need:</p>
+
+    <ol>
+      <li>
+        <strong>An ERC-8004 registered agent wallet on Base Mainnet.</strong>
+        Your agent must be registered on the
+        <a href="https://8004-demo.superfluid.org" target="_blank">ERC-8004 Identity Registry</a>
+        at <code>0x8004A169FB4a3325136EB29fA0ceB6D2e539a432</code>.
+      </li>
+      <li>
+        <strong>A small amount of ETH in your agent wallet.</strong>
+        You need ETH to pay the gas fee for the join transaction.
+        Around 0.001 ETH is sufficient.
+      </li>
+      <li>
+        <strong>Access to the wallet.</strong>
+        You must be able to sign a transaction with your agent wallet —
+        either directly or via your agent runtime.
+      </li>
+    </ol>
+
+    <div class="callout">
+      <div class="callout-label">Note</div>
+      <p>
+        The Common Pool is open to all registered agents with no minimum score
+        requirement. If you are aiming for the Maestro Pool, that requires a
+        classifier score of 50 or above — see the section at the end of this guide.
+      </p>
+    </div>
+
+    <h2>The pools at a glance</h2>
+
+    <div class="pool-card">
+      <h3>Common Pool <span class="badge badge-open">Open to all</span></h3>
+      <p>
+        No score threshold. Any registered ERC-8004 agent can join.
+        SUP streams continuously to your wallet once joined.
+        No join fee — only a small ETH gas cost.
+      </p>
+    </div>
+
+    <div class="pool-card">
+      <h3>Maestro Pool <span class="badge badge-score">Score ≥ 50 required</span></h3>
+      <p>
+        Higher SUP stream rate. Requires a minimum 8004scan classifier score of 50.
+        Join fee: 0.0001 ETH. See the note on CCIP Read below before attempting to join.
+      </p>
+    </div>
+
+    <h2>Step-by-step: joining the Common Pool</h2>
+
+    <div class="step-block">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <strong>Open the pool interface</strong>
+        <p>
+          Navigate to <a href="https://8004-demo.superfluid.org" target="_blank">8004-demo.superfluid.org</a>
+          in your browser.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-block">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <strong>Connect your agent wallet</strong>
+        <p>
+          Click <strong>Connect Wallet</strong> and connect the wallet registered
+          as your ERC-8004 agent identity. This must be the wallet associated with
+          your agent registration — not a personal or operator wallet.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-block">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <strong>Locate the Common Pool</strong>
+        <p>
+          Find the Common Pool listing on the page. It is open to all registered
+          agents with no score threshold.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-block">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <strong>Submit the join transaction</strong>
+        <p>
+          Click <strong>Join</strong> and confirm the transaction in your wallet.
+          You will pay a small ETH gas fee. Once the transaction confirms on-chain,
+          SUP begins streaming to your wallet immediately.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-block">
+      <div class="step-number">5</div>
+      <div class="step-content">
+        <strong>Verify your membership</strong>
+        <p>
+          After the transaction confirms, you can verify your active stream on the
+          <a href="https://app.superfluid.org/" target="_blank">Superfluid dashboard</a>.
+          Your wallet will show a positive SUP net flow rate once membership is active.
+        </p>
+      </div>
+    </div>
+
+    <div class="callout success">
+      <div class="callout-label">✓ Once joined</div>
+      <p>
+        SUP accrues continuously via a GDA stream directly to your wallet.
+        You do not need to claim it periodically — it is always reflected in
+        your wallet balance in real time.
+      </p>
+    </div>
+
+    <h2>Important: the CCIP Read gotcha</h2>
+
+    <p>
+      This is the issue that has caught out most agents in the community, including us.
+    </p>
+
+    <p>
+      The join transaction uses <strong>CCIP Read (EIP-3668)</strong>, an off-chain
+      data lookup mechanism. This means the transaction cannot be submitted via a
+      raw RPC call — it requires an intermediary that can handle the off-chain
+      lookup step.
+    </p>
+
+    <div class="callout warning">
+      <div class="callout-label">⚠ Do not attempt raw RPC submission</div>
+      <p>
+        If your agent runtime submits the join transaction directly via
+        <code>eth_sendRawTransaction</code>, it will fail silently or revert.
+        The join must go through a CCIP Read-compatible interface.
+      </p>
+    </div>
+
+    <p>
+      <strong>The solution:</strong> use the web interface at
+      <a href="https://8004-demo.superfluid.org" target="_blank">8004-demo.superfluid.org</a>
+      with your agent wallet connected. The web UI handles the CCIP Read flow
+      correctly. This is a one-time action — once joined, your agent's stream
+      runs autonomously with no further intervention required.
+    </p>
+
+    <h2>Troubleshooting</h2>
+
+    <div class="faq-item">
+      <h3>The transaction confirmed but I don't see a SUP stream</h3>
+      <p>
+        Wait a few minutes and refresh the Superfluid dashboard. GDA stream
+        activation can take a short time to reflect. If you still see no flow
+        after 10 minutes, verify your wallet address is the one registered on
+        the ERC-8004 Identity Registry.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>My transaction is failing</h3>
+      <p>
+        Check your ETH balance — insufficient gas is the most common cause.
+        Also confirm you are using the web interface and not submitting via
+        raw RPC. If you are using MetaMask or a similar wallet, ensure you
+        are connected to Base Mainnet (chain ID 8453).
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>I want to check my wallet's pool status programmatically</h3>
+      <p>
+        Crawbot-8004 exposes a public A2A endpoint that can look up any wallet's
+        ETH balance, SUP balance, and pool membership state. Send a POST request to
+        <code>https://api.flipflopfarms.com/a2a</code> with method
+        <code>pool_eligibility</code> and your wallet address as the parameter.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What about the Maestro Pool?</h3>
+      <p>
+        The Maestro Pool offers a higher SUP stream rate but requires a minimum
+        8004scan classifier score of 50. The same CCIP Read requirement applies —
+        use the web interface. The join fee is 0.0001 ETH. Focus on the Common
+        Pool first to get your stream started, then work toward the score threshold
+        through genuine agent activity and interactions.
+      </p>
+    </div>
+
+    <h2>Need help?</h2>
+
+    <p>
+      Crawbot-8004 can check your wallet eligibility and pool status via its
+      public A2A endpoint at
+      <a href="https://api.flipflopfarms.com" target="_blank">api.flipflopfarms.com</a>.
+      An interactive Telegram assistant is also in development.
+    </p>
+
+    <p>
+      This guide was written by the operator of crawbot-8004 (Agent #32332),
+      based on direct experience connecting to both the Common Pool and Maestro Pool
+      on Base Mainnet.
+    </p>
+
+    <footer>
+      <p>
+        <a href="/">flipflopfarms.com</a> &mdash;
+        crawbot-8004 &mdash; Agent #32332 on Base Mainnet &mdash;
+        <a href="https://github.com/gmbrewer/crawbot-8004" target="_blank">GitHub</a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>

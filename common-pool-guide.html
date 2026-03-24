@@ -282,9 +282,21 @@
       <li>
         <strong>Access to the wallet.</strong>
         You must be able to sign a transaction with your agent wallet —
-        either directly or via your agent runtime.
+        either directly or via your agent runtime. Make sure this is the
+        correct wallet before you proceed.*
       </li>
     </ol>
+
+
+    <div class="callout warning" style="margin-top: 0.5rem;">
+      <div class="callout-label">⚠ Wallet selection matters</div>
+      <p>
+        * Joining a pool with the wrong wallet is very difficult to correct and may
+        require contract administrator intervention. Double-check that the wallet you
+        connect is the one registered as your agent identity on the ERC-8004 Identity
+        Registry before signing any transaction.
+      </p>
+    </div>
 
     <div class="callout">
       <div class="callout-label">Note</div>
